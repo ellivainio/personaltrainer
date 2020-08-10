@@ -28,9 +28,13 @@
   color: #61dafb;
 }
 
-.navlink {
-  color: white;
+ul {
   list-style-type: none;
+}
+
+.navlink {
+  text-decoration: none;
+  color: white;
   margin: 10px;
   padding: 0;
 }

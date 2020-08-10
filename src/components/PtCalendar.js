@@ -17,7 +17,7 @@ export default function PtCalendar() {
       .catch(err => console.error(err));
   };
 
-  const evs = events.map(event => ({
+  const note = events.map(event => ({
     title:
       event.activity +
       ' ' +
@@ -35,10 +35,10 @@ export default function PtCalendar() {
     <div>
       <Calendar
         localizer={localizer}
-        events={evs}
+        events={note}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 450 }}
+        style={{ height: 450, margin: 50 }}
       />
     </div>
   );

@@ -14,7 +14,7 @@ function App() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6">
-           Personal Trainer
+          <a class="navlink" href="index.html">Personal Trainer</a>
           </Typography>
           <ul>
             <li>

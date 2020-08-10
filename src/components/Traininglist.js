@@ -51,10 +51,11 @@ export default function Traininglist() {
             accessor: 'activity'
         },
         {
-            id: 'customerid',
+            id: 'customer',
             Header: 'Customer',
-            accessor: 'customer.firstname'
-        },
+            accessor: customer =>
+              customer.customer.firstname + ' ' + customer.customer.lastname
+          },
         {
             sortable: false,
             filterable: false,
